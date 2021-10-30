@@ -8,7 +8,13 @@
  - start detections using `$ python MouseControl.py`
 
 ## Controls
-  - Only index finger up: Mouse Moving Mode
+  - Only index finger up: **Mouse Moving Mode**
  	  - Use index finger to move around the cursor
-  - Index and middle fingers up: Clicking Mode
- 	  - Touch index and middle fingers to make a left click 
+  - Index and middle fingers up: **Clicking Mode**
+ 	  - Touch index and middle fingers to make a left click
+
+## Demo
+  - Cursor Movement Control
+  ![cursor](./demo/cursor.gif) 
+  - Left Click Control
+  ![click](./demo/click.gif) 

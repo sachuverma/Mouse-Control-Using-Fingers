@@ -37,7 +37,7 @@ while True:
         cv2.rectangle(img, (frameR, frameR), (wCam-frameR, hCam-frameR), (255, 0, 255), 2)
 
         # ONLY INDEX FINGER = MOVING MODE
-        if fingers[1] == 1 and fingers[2] == 0:
+        if fingers[1] == 1 and fingers[2] == 0 and fingers[3] == 0 and fingers[4] == 0:
             # CONVERT COORDINATES
             x3 = np.interp(x1, (frameR, wCam-frameR), (0, wScr))
             y3 = np.interp(y1, (frameR, hCam-frameR), (0, hScr))
@@ -52,7 +52,7 @@ while True:
             plocX, plocY = clocX, clocY
 
     # MIDDLE + INDEX FINGER = CLICKING MODE
-        if fingers[1] == 1 and fingers[2] == 1:
+        if fingers[1] == 1 and fingers[2] == 1 and fingers[3] == 0 and fingers[4] == 0:
             # FIND DISTANCE B/W FINGERS
             length, img, lineInfo = detector.findDistance(8, 12, img)
             # print(length)
